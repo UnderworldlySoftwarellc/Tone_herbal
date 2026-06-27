@@ -63,7 +63,7 @@ nav a:hover { color: #dad7cd; }
 /* ── Hero ── */
 .hero {
   background: linear-gradient(rgba(58,90,64,0.82), rgba(58,90,64,0.82)),
-              url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2120') center/cover no-repeat;
+              url('img/photo-1544367567-0f2fcb009e0b.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 7rem 5%;
@@ -247,22 +247,22 @@ h2 {
 
 .product-img-balm {
   background: linear-gradient(135deg, #a8c5a0 0%, #6b9a6b 100%);
-  background-image: url('https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=600&q=80'), linear-gradient(135deg, #a8c5a0 0%, #6b9a6b 100%);
+  background-image: url('img/photo-1608248597279-f99d160bfcbc.jpg'), linear-gradient(135deg, #a8c5a0 0%, #6b9a6b 100%);
 }
 
 .product-img-tincture {
   background: linear-gradient(135deg, #8fad7e 0%, #5a8050 100%);
-  background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80'), linear-gradient(135deg, #8fad7e 0%, #5a8050 100%);
+  background-image: url('img/photo-1587854692152-cbe660dbde88.jpg'), linear-gradient(135deg, #8fad7e 0%, #5a8050 100%);
 }
 
 .product-img-oil {
   background: linear-gradient(135deg, #c5b89a 0%, #9a8560 100%);
-  background-image: url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=600&q=80'), linear-gradient(135deg, #c5b89a 0%, #9a8560 100%);
+  background-image: url('img/photo-1596178065887-1198b6148b2b.jpg'), linear-gradient(135deg, #c5b89a 0%, #9a8560 100%);
 }
 
 .product-img-tea {
   background: linear-gradient(135deg, #b5c9a0 0%, #7a9a60 100%);
-  background-image: url('https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80'), linear-gradient(135deg, #b5c9a0 0%, #7a9a60 100%);
+  background-image: url('img/photo-1556679343-c7306c1976bc.jpg'), linear-gradient(135deg, #b5c9a0 0%, #7a9a60 100%);
 }
 
 .product-info { padding: 1.4rem; }
