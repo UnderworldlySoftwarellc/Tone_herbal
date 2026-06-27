@@ -79,8 +79,7 @@
 
       fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(bookingForm)).toString()
+        body: new FormData(bookingForm)
       })
       .then(function (res) {
         if (res.ok) {
@@ -118,8 +117,7 @@
 
       fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(contactForm)).toString()
+        body: new FormData(contactForm)
       })
       .then(function (res) {
         if (res.ok) {

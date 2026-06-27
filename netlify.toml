@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[form]]
+  name = "contact"
+  
+[[notifications]]
+  form = "contact"
+  email = "murraykeira@yahoo.com"
