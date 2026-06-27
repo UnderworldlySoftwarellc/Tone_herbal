@@ -8,7 +8,14 @@
 
 [[form]]
   name = "contact"
+
+[[form]]
+  name = "booking"
   
 [[notifications]]
   form = "contact"
+  email = "murraykeira@yahoo.com"
+
+[[notifications]]
+  form = "booking"
   email = "murraykeira@yahoo.com"
