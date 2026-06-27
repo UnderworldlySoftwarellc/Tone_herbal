@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tone's Healing and Herbs LLC | Totalearth Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Tone's Healing <span>&amp; Herbs</span></div>
+      <ul id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#totalearth">Totalearth</a></li>
+        <li><a href="#booking">Book Now</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Holistic Wellness from the Earth</h1>
+    <p>Build your own wellness session. Pick one service or bundle multiple and save. Massage therapy, fitness training, and plant medicine all in one place.</p>
+    <a href="#booking" class="btn">Request Your Session</a>
+  </div>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">&#128134;&#127998;</div>
+        <h3>Massage Therapy</h3>
+        <p>Therapeutic, deep tissue, and relaxation massage with Totalearth CBD topicals available on request.</p>
+        <p class="svc-price"><strong>60 min &mdash; $90</strong></p>
+        <p class="svc-price"><strong>90 min &mdash; $130</strong></p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#127947;&#127998;</div>
+        <h3>Personal Fitness Training</h3>
+        <p>Customized programming targeting your goals. Strength, mobility, and conditioning tailored to your body.</p>
+        <p class="svc-price"><strong>60 min &mdash; $80</strong></p>
+        <p class="svc-price"><strong>5-Session Pack &mdash; $350</strong> <span class="bundle-badge">Save $50</span></p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#127807;</div>
+        <h3>Plant Medicine Consultation</h3>
+        <p>Personalized herbal wellness guidance using plant-based remedies from the Totalearth line and traditional herbalism.</p>
+        <p class="svc-price"><strong>45 min &mdash; $65</strong></p>
+        <p class="svc-price"><strong>Full Assessment (90 min) &mdash; $110</strong></p>
+      </div>
+
+      <div class="service-card highlight-card">
+        <div class="service-icon">&#10024;</div>
+        <h3>Bundle &amp; Save</h3>
+        <p>Combine any two or more services in a single session for a deeper, integrated wellness experience.</p>
+        <p class="svc-price"><strong>Any 2 Services</strong> <span class="bundle-badge">Save $15</span></p>
+        <p class="svc-price"><strong>Any 3+ Services</strong> <span class="bundle-badge">Save $30</span></p>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong> Services provided by Tone's Healing and Herbs LLC are for wellness and educational purposes only and are not a substitute for professional medical diagnosis, advice, or treatment. Always consult a licensed healthcare provider for medical concerns.
+    </div>
+  </section>
+
+  <!-- Totalearth Collection -->
+  <section id="totalearth" class="totalearth-section">
+    <h2>Totalearth Collection</h2>
+    <p class="section-sub">Plant-powered topicals, tinctures, and blends crafted to complement every session.</p>
+    <div class="products">
+
+      <div class="product-card">
+        <div class="product-img-wrap product-img-balm"></div>
+        <div class="product-info">
+          <span class="totalearth-badge">Totalearth</span>
+          <h3>CBD Recovery Balm</h3>
+          <p>Fast-absorbing broad-spectrum CBD and arnica balm that soothes sore muscles and joints after every session.</p>
+          <div class="price">$45</div>
+          <a href="#booking" class="btn product-btn">Add to Session</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap product-img-tincture"></div>
+        <div class="product-info">
+          <span class="totalearth-badge">Totalearth</span>
+          <h3>Herbal Inflammation Tincture</h3>
+          <p>Turmeric, ginger, and wildcrafted herbs in a sublingual tincture to support the body's natural response to inflammation.</p>
+          <div class="price">$35</div>
+          <a href="#booking" class="btn product-btn">Add to Session</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap product-img-oil"></div>
+        <div class="product-info">
+          <span class="totalearth-badge">Totalearth</span>
+          <h3>Calming Botanical Body Oil</h3>
+          <p>Lavender, chamomile, and jojoba oil blend used during relaxation massage to ease stress and deeply nourish skin.</p>
+          <div class="price">$55</div>
+          <a href="#booking" class="btn product-btn">Add to Session</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img-wrap product-img-tea"></div>
+        <div class="product-info">
+          <span class="totalearth-badge">Totalearth</span>
+          <h3>Herbal Detox Tea Blend</h3>
+          <p>Hand-blended loose-leaf tea with dandelion root, burdock, and nettle to support liver function and whole-body cleansing.</p>
+          <div class="price">$28</div>
+          <a href="#booking" class="btn product-btn">Add to Session</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking">
+    <h2>Request Your Session</h2>
+    <div class="contact-form">
+      <form id='booking-form' method='POST' name='booking'>
+        <input type="hidden" name="form-name" value="booking">
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <div class="form-group">
+          <label for="b-name">Full Name *</label>
+          <input type="text" id="b-name" name="name" required placeholder="Your full name">
+        </div>
+
+        <div class="datetime-group">
+          <div class="form-group">
+            <label for="b-phone">Phone Number *</label>
+            <input type="tel" id="b-phone" name="phone" required placeholder="(555) 555-5555">
+          </div>
+          <div class="form-group">
+            <label for="b-email">Email Address *</label>
+            <input type="email" id="b-email" name="email" required placeholder="your@email.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Select Service(s) &mdash; Mix and bundle to save!</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="massage-60" data-price="90" data-label="Massage Therapy 60 min">
+              <span>Massage Therapy &mdash; 60 min <strong>($90)</strong></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="massage-90" data-price="130" data-label="Massage Therapy 90 min">
+              <span>Massage Therapy &mdash; 90 min <strong>($130)</strong></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="training-60" data-price="80" data-label="Fitness Training 60 min">
+              <span>Fitness Training &mdash; 60 min <strong>($80)</strong></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="plant-45" data-price="65" data-label="Plant Medicine Consult 45 min">
+              <span>Plant Medicine &mdash; 45 min <strong>($65)</strong></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="plant-90" data-price="110" data-label="Plant Medicine Full Assessment">
+              <span>Plant Medicine &mdash; Full Assessment <strong>($110)</strong></span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="services" value="cbd-topical" data-price="20" data-label="Totalearth CBD Topical Add-on">
+              <span>Totalearth CBD Topical Add-on <strong>(+$20)</strong></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Date &amp; Time</label>
+          <div class="datetime-group">
+            <input type="date" id="b-date" name="date">
+            <select id="b-time" name="time">
+              <option value="">Select a time</option>
+              <option>9:00 AM</option>
+              <option>10:00 AM</option>
+              <option>11:00 AM</option>
+              <option>12:00 PM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>3:00 PM</option>
+              <option>4:00 PM</option>
+              <option>5:00 PM</option>
+              <option>6:00 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="b-notes">Health Notes / Special Requests</label>
+          <textarea id="b-notes" name="notes" rows="3" placeholder="Any health conditions, preferences, or questions for your practitioner..."></textarea>
+        </div>
+
+        <!-- Dynamic Price Breakdown -->
+        <div id="total-box" class="total-box" style="display:none">
+          <div id="price-lines"></div>
+          <div id="discount-line" class="total-line discount" style="display:none">
+            <span id="discount-label">Bundle Discount</span>
+            <span id="discount-amount"></span>
+          </div>
+          <div class="total-line final">
+            <span>Estimated Session Total</span>
+            <span id="total-amount">$0</span>
+          </div>
+        </div>
+
+        <div id="payment-instructions" class="instructions" style="display:none">
+          <strong>How to confirm your booking:</strong> A 50% deposit is required to hold your spot.<br>
+          Send via <strong>CashApp $TonesHealingHerbs</strong> &nbsp;&bull;&nbsp; <strong>Venmo @TonesHealing</strong> &nbsp;&bull;&nbsp; <strong>Zelle</strong> (number provided on confirmation).<br>
+          Full balance is due at time of service. We'll reach out within 24 hours to confirm your date and time.
+        </div>
+
+        <!-- Hidden fields for form submission totals -->
+        <input type="hidden" id="booking-total" name="total">
+        <input type="hidden" id="selected-services-text" name="selected-services">
+
+        <button type="submit" class="btn btn-submit">Submit Booking Request</button>
+
+        <div id="booking-success" class="form-msg success" style="display:none">
+          <strong>&#10003; Request received!</strong> We'll confirm your session within 24 hours. Don't forget to send your deposit to secure your spot.
+        </div>
+        <div id="booking-error" class="form-msg error" style="display:none">
+          Something went wrong. Please try again or contact us directly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <div class="contact-form">
+      <form id='contact-form' method='POST' name='contact'>
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <div class="form-group">
+          <label for="c-name">Name *</label>
+          <input type="text" id="c-name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="c-email">Email *</label>
+          <input type="email" id="c-email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="c-message">Message *</label>
+          <textarea id="c-message" name="message" rows="4" required placeholder="How can we help you?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Send Message</button>
+
+        <div id="contact-success" class="form-msg success" style="display:none">
+          <strong>&#10003; Message sent!</strong> We'll be in touch soon.
+        </div>
+        <div id="contact-error" class="form-msg error" style="display:none">
+          Something went wrong. Please try again.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Tone's Healing and Herbs LLC</strong> &mdash; Totalearth Collection</p>
+    <p class="footer-sub">Wellness services for educational and holistic purposes only. Not a substitute for professional medical treatment.</p>
+    <p class="footer-copy">&copy; 2025 Tone's Healing and Herbs LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
