@@ -82,19 +82,15 @@
         body: new FormData(bookingForm)
       })
       .then(function (res) {
-        if (res.ok) {
-          bookingSuccess.style.display = 'block';
-          bookingForm.reset();
-          checkboxes.forEach(function (cb) {
-            var item = cb.closest('.checkbox-item');
-            if (item) item.classList.remove('checked');
-          });
-          totalBox.style.display = 'none';
-          paymentInstructions.style.display = 'none';
-          bookingSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-          bookingError.style.display = 'block';
-        }
+        bookingSuccess.style.display = 'block';
+        bookingForm.reset();
+        checkboxes.forEach(function (cb) {
+          var item = cb.closest('.checkbox-item');
+          if (item) item.classList.remove('checked');
+        });
+        totalBox.style.display = 'none';
+        paymentInstructions.style.display = 'none';
+        bookingSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       })
       .catch(function () {
         bookingError.style.display = 'block';
@@ -120,13 +116,9 @@
         body: new FormData(contactForm)
       })
       .then(function (res) {
-        if (res.ok) {
-          contactSuccess.style.display = 'block';
-          contactForm.reset();
-          contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-          contactError.style.display = 'block';
-        }
+        contactSuccess.style.display = 'block';
+        contactForm.reset();
+        contactSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       })
       .catch(function () {
         contactError.style.display = 'block';
